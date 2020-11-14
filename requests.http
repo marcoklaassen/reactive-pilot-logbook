@@ -1,0 +1,14 @@
+### Get All Legs
+GET {{api-url}}/leg
+
+### Get Leg by id
+GET {{api-url}}/leg/1
+
+### Create new Leg
+POST {{api-url}}/leg
+Content-Type: application/json
+
+{
+  "flightFrom": "EDDH",
+  "flightTo": "EDXR"
+}
