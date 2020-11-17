@@ -15,8 +15,7 @@ import lombok.NoArgsConstructor;
 @Data
 @Builder
 public class Leg {
-  @Id @GeneratedValue
-  private Long id;
+  @Id @GeneratedValue private Long id;
   @Column private String flightFrom;
   @Column private String flightTo;
 }
