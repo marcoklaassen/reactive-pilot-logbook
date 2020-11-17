@@ -1,6 +1,7 @@
 package click.klaassen.logbook;
 
 import io.smallrye.mutiny.Uni;
+import java.util.List;
 import javax.inject.Inject;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
@@ -17,6 +18,11 @@ import org.jboss.resteasy.annotations.jaxrs.PathParam;
 public class LegController {
 
   @Inject Mutiny.Session session;
+
+  @GET
+  public Uni<List<Leg>> findAllLegs() {
+    return session.createQuery("select l from Leg l", Leg.class).getResultList();
+  }
 
   @GET
   @Path("/{id}")

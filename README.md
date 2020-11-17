@@ -4,5 +4,5 @@ Project to explore reactive hibernate with quarkus
 
 ## TODO
 * Flyway Integration
-* Get All Endpoint
+* Write tests
 * `there are still so many great things to do 📝`
